@@ -1,2 +1,1 @@
-# punkmaster.github.io
-be grateful
+this site was solely created for purpose
