@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unicode Block Border Page</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #181818;
+      color: #fff;
+      font-family: 'Fira Mono', 'Consolas', 'Courier New', monospace;
+      box-sizing: border-box;
+    }
+    .block-border-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .block-border {
+      /* The border is created using Unicode block elements */
+      font-size: 2rem;
+      line-height: 1;
+      text-align: center;
+      padding: 0;
+      background: #222;
+      /* Needed for monospace alignment */
+      white-space: pre;
+    }
+    .block-content {
+      padding: 2rem 4rem;
+      background: #222;
+      color: #e0e0e0;
+      min-width: 20ch;
+      min-height: 10ch;
+    }
+  </style>
+</head>
+<body>
+  <div class="block-border-container">
+    <pre class="block-border"><!-- Top Border -->
+&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;&#9600;
+&#9612;                            &#9616;
+&#9612;      <span class="block-content">Placeholder Text</span>      &#9616;
+&#9612;                            &#9616;
+&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;&#9604;
+    </pre>
+  </div>
+</body>
+</html>
